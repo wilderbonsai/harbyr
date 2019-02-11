@@ -208,7 +208,7 @@ p.lead {
     }
     .navbar-nav>.nav-item>.nav-link.active:after {
         content: "";
-        border-bottom: 2px solid #cd99d4;
+        border-bottom: 2px solid #99d4b1;
         left: 1rem;
         right: 1rem;
         bottom: 5px;
@@ -424,14 +424,14 @@ header {
     padding: 1rem 1rem;
     border-color: #faf6fb #faf6fb #FFF;
     font-size: 19px;
-    color: #b5a4c8;
+    color: #a4b3c8;
     background: #f5eff7;
 }
 
 .nav-tabs .nav-link.active {
     background: #FFF;
     border-top-width: 3px;
-    border-color: #ce75b4 #faf6fb #FFF;
+    border-color: #75adce #faf6fb #FFF;
     color: #395f91;
 }
 
@@ -532,7 +532,7 @@ header {
 
 .card.pricing.popular {
     border-top-width: 3px;
-    border-color: #ce75b4 #faf6fb #FFF;
+    border-color: #75adce #faf6fb #FFF;
     box-shadow: 0px 12px 59px 0px rgba(36, 7, 31, 0.11);
     color: #395f91;
 }
