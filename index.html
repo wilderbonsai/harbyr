@@ -47,6 +47,7 @@ URI     : https://colorlib.com
                                 <li class="nav-item"> <a class="nav-link" href="#features">ABOUT</a> </li>
                                 <li class="nav-item"> <a class="nav-link" href="#howitworks">HOW IT WORKS</a> </li>
                                 <li class="nav-item"> <a class="nav-link" href="#pricing">PRICING</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#locations">LOCATIONS</a> </li>
                                 <li class="nav-item"> <a class="nav-link" href="#contact">CONTACT</a> </li>
                             </ul>
                         </div>
@@ -68,12 +69,7 @@ URI     : https://colorlib.com
 
 
     <div class="section">
-
-
         <div class="container">
-
-
-
             <div class="row">
                 <div class="col-12 col-lg-4">
                     <div class="card features">
@@ -117,11 +113,7 @@ URI     : https://colorlib.com
                     </div>
                 </div>
             </div>
-
         </div>
-
-
-
     </div>
 
     <!-- // end .section -->
@@ -132,15 +124,15 @@ URI     : https://colorlib.com
                 <h3>Create more, manage less.</h3>
             </div>
 
-            <ul class="nav nav-tabs nav-justified" role="tablist">
+            <ul class="nav nav-tabs nav-justified" role="tablist" id="featuretabs">
                 <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#storage">Storage</a>
+                    <a class="nav-link active" data-tab-group="features" data-toggle="tab" data-name="storage" href="#storage">Storage</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#schedule">Packing</a>
+                    <a class="nav-link" data-tab-group="features" data-toggle="tab" data-name="packing" href="#schedule">Packing</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#messages">Delivery</a>
+                    <a class="nav-link" data-tab-group="features" data-toggle="tab"  data-name="delivery" href="#messages">Delivery</a>
                 </li>
             </ul>
             <div class="tab-content">
@@ -189,7 +181,17 @@ URI     : https://colorlib.com
                     </div>
                 </div>
             </div>
-                
+            <ul class="nav nav-tabs nav-tabs-bottom nav-justified" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-name="storage" data-tab-group="features" data-toggle="tab" data-link="#featuretabs" href="#storage">Storage</a></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-name="packing" data-tab-group="features" data-toggle="tab" data-link="#featuretabs"data-name="packing" href="#schedule">Packing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-name="delivery" data-tab-group="features" data-toggle="tab" data-link="#featuretabs" href="#messages">Delivery</a>
+                </li>
+            </ul>
 
         </div>
     </div>
@@ -261,15 +263,15 @@ URI     : https://colorlib.com
                 <div class="card pricing">
                     <div class="card-head">
                         <h4>Storage</h4>
-                         <small class="text-primary">Small Painting < 50 cm</small>
+                         
                         <span class="price">€3<sub>/month</sub></span>
-                        <small class="text-primary">Large Painting > 50 cm</small>
+                        <small class="text-primary">Small Painting < 50 cm</small>
                         <span class="price">€5<sub>/month</sub></span>
-                        <small class="text-primary">Small Sculpture < 50 cm</small>
+                        <small class="text-primary">Large Painting > 50 cm</small>
                         <span class="price">€7<sub>/month</sub></span>
-                        <small class="text-primary">Large Sculpture > 50 cm</small>
+                        <small class="text-primary">Small Sculpture < 50 cm</small>
                         <span class="price">€15<sub>/month</sub></span>
- 
+                        <small class="text-primary">Large Sculpture > 50 cm</small>
                     </div>
           
                        
@@ -278,10 +280,11 @@ URI     : https://colorlib.com
                     <div class="card-head">
                         <h4>All in one Management</h4>
                         <div class="list-group-item"></div>
+                    
+                        <span class="price">€15 <sub>per piece</sub></span>
                         <small class="text-primary">Small Work < 50cm</small>
-                            <span class="price">€15 <sub>per piece</sub></span>
+                        <span class="price">€20 <sub>per piece</sub></span>   
                         <small class="text-primary">Large Work > 50cm</small>
-                            <span class="price">€20 <sub>per piece</sub></span>    
                         <ul class="list-group list-group-flush">
                         <div class="list-group-item">Storage Management</div>
     
@@ -303,22 +306,39 @@ URI     : https://colorlib.com
                         <a href="#" class="btn btn-primary btn-lg btn-block">See our Shipping Rates</a>
                     </div>
                     </div>
-                        
-
                 </div>
-
-                
             </div>
             <!-- // end .pricing -->
-
-
         </div>
-
     </div>
     <!-- // end .section -->
 
 
-    
+    <div class="section" id="locations">
+        <div class="container">
+            <div class="section-title">
+                <h3>Storage Locations</h3>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="card features ">
+                        <div class="card-body">
+                            <img width="100%" src="images/berlin.png" alt="berlin" class="img-fluid city">
+                            <h4 class="card-title">Berlin</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="card features disabled">
+                        <div class="card-body">
+                            <img src="images/vienna.png" alt="vienna" class="img-fluid city" style="padding-top:15px;padding-bottom:40px;">
+                            <h4 class="card-title">Vienna - Coming Soon</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class=" py-5" id="contact">
         <div class="container">
@@ -340,10 +360,10 @@ URI     : https://colorlib.com
                     </div>
                 </div>
             </div>
-
         </div>
-
     </div>
+
+
     <!-- // end .section -->
     <footer class=" my-5 text-center">
         <!-- Copyright removal is not prohibited! -->

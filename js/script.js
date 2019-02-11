@@ -45,16 +45,38 @@ $(function() {
         $(this).parents('.nav-menu').removeClass('menu-is-open');
     })
 
+     $('[data-tab-group]').on('click', function(event) {
+        var name = $(event.target).data('name')
+        var group = $(event.target).data('tab-group')
+        $(`[data-tab-group="${group}"]`).removeClass('active')
+        setTimeout(function(){$(`[data-name="${name}"]`).addClass('active')},500)
+        
+     });
+
+
     /*-----------------------------------
      * ONE PAGE SCROLLING
      *-----------------------------------*/
     // Select all links with hashes
-    $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').not('[data-toggle="tab"]').on('click', function(event) {
+    $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').on('click', function(event) {
+      
         // On-page links
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             // Figure out element to scroll to
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          var hash = this.hash;  
+          if($(event.target).data("toggle") == 'tab') {
+                if($(event.target).data("link")) {
+                    hash = $(event.target).data("link")
+                } else {
+                    return
+                }
+            }
+
+          var target = $(hash);
+
+            console.log(target)
+          
+            target = target.length ? target : $('[name=' + hash(1) + ']');
             // Does a scroll target exist?
             if (target.length) {
                 // Only prevent default if animation is actually gonna happen
