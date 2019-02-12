@@ -49,8 +49,7 @@ $(function() {
         var name = $(event.target).data('name')
         var group = $(event.target).data('tab-group')
         $(`[data-tab-group="${group}"]`).removeClass('active')
-        setTimeout(function(){$(`[data-name="${name}"]`).addClass('active')},500)
-        
+        setTimeout(function(){$(`[data-name="${name}"]`).addClass('active')},50)
      });
 
 

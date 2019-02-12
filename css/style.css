@@ -253,7 +253,7 @@ header {
 
 .img-holder {
     height: 0;
-    padding-bottom: 33%;
+    padding-bottom: 19%;
     overflow: hidden;
 }
 
@@ -276,6 +276,13 @@ header {
     .tagline {
         font-size: 17px;
     }
+    .img-holder {
+        padding-bottom: 25%;
+    }
+}
+
+@media (max-width:400px) {
+    
     .img-holder {
         padding-bottom: 60%;
     }
